@@ -1,1 +1,49 @@
-// Начните писать стили здесь
+@import "fonts.scss";
+@import "variables.scss";
+@import "mixins.scss";
+@import "page.scss";
+@import "wrapper.scss";
+@import "button.scss";
+@import "main-menu.scss";
+@import "main-header.scss";
+@import "intro-banner.scss";
+@import "diet-program.scss";
+@import "features.scss";
+@import "programs.scss";
+@import "example.scss";
+@import "cooperation.scss";
+@import "main-footer.scss";
+@import "social-media.scss";
+@import "gift-banner.scss";
+@import "additional-products.scss";
+@import "additional-item.scss";
+@import "products-catalog.scss";
+@import "product-card.scss";
+@import "show-more.scss";
+@import "selection.scss";
+@import "form.scss";
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

@@ -1,0 +1,57 @@
+.example {
+  background-color: $basic-grey-dark;
+}
+
+.example__wrapper {
+  padding-top: 27px;
+  padding-bottom: 25px;
+}
+
+.example__title {
+  margin-top: 0;
+
+  @include oswald-text;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 40px;
+  color: $black;
+}
+
+.example__slider {
+  width: 320px;
+  margin: 0 auto;
+  padding-bottom: 25px;
+}
+
+.example__statistic {
+  @include list;
+}
+
+.example__value {
+  @include oswald-text;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: normal;
+  color: $black;
+}
+
+.example__desc {
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.example__expenses {
+  @include oswald-text;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  color: $black;
+}
+
+.example__button {
+  @include oswald-text;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}

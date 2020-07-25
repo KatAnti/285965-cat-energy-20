@@ -1,0 +1,13 @@
+.social-media {
+  @include list;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid $border-dark;
+  border-bottom: 1px solid $border-dark;
+}
+
+.social-media__item:not(:last-child) {
+  margin-right: 36px;
+}

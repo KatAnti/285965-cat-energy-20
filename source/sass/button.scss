@@ -1,0 +1,34 @@
+.button {
+  @include oswald-text;
+  display: inline-block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: none;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.button--green {
+  background-color: $basic-green;
+  color: $white;
+
+  &:hover {
+    background-color: $basic-green-hover;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.button--grey {
+  background-color: $basic-grey;
+
+  &:hover {
+    background-color: $basic-grey-hover;
+  }
+
+  &:active {
+    color: rgba(68, 68, 68, 0.3);
+  }
+}

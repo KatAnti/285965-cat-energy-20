@@ -1,0 +1,27 @@
+.main-header__menu {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.main-header__logo-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 11px;
+  padding-bottom: 17px;
+  border-bottom: 1px solid $border-grey;
+}
+
+.main-header__logo {
+  display: block;
+}
+
+.main-header__menu-toggle--open {
+  width: 18px;
+  height: 18px;
+  border: none;
+  background: transparent;
+  background-image: url("../img/icon-close.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}

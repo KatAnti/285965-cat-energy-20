@@ -1,0 +1,30 @@
+.intro-banner {
+  @include oswald-text;
+
+  padding-top: 27px;
+  margin-bottom: 22px;
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: $white;
+}
+
+.intro-banner__title {
+  margin-top: 0;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.intro-banner__text {
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+.intro-banner__link {
+  display: block;
+  font-size: 14px;
+  line-height: 18px;
+}

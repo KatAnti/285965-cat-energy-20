@@ -1,0 +1,12 @@
+.additional-products__wrapper {
+  margin-bottom: 35px;
+}
+
+.additional-products__title {
+  @include line-title;
+}
+
+.additional-products__list {
+  @include list;
+  margin-bottom: 39px;
+}
