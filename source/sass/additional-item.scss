@@ -1,0 +1,21 @@
+.additional-item {
+  padding-top: 13px;
+  padding-bottom: 18px;
+}
+
+.additional-item__title {
+  @include oswald-text;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $text-medium;
+}
+
+.additional-item__button {
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 16px;
+  line-height: 0px;
+}

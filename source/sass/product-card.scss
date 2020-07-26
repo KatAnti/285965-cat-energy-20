@@ -1,0 +1,35 @@
+.product-card {
+  padding-bottom: 25px;
+  padding-left: 20px;
+  padding-right: 19px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product-card__title {
+  @include oswald-text;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: $text-medium;
+}
+
+.product-card__link {
+  display: block;
+  max-width: 80px;
+  color: $text-medium;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.product-card__button {
+  display: block;
+  flex-basis: 100%;
+}

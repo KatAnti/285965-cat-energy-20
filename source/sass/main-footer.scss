@@ -1,0 +1,33 @@
+.main-footer {
+  padding-top: 39px;
+  padding-bottom: 22px;
+  background-color: $basic-grey;
+}
+
+.main-footer__logo {
+  display: block;
+  width: 128px;
+  height: 24px;
+  margin-bottom: 32px;
+}
+
+.main-footer__copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: $text-light;
+
+  &:hover svg {
+    fill: $basic-green;
+  }
+
+  &:active svg {
+    opacity: 0.3;
+  }
+}
+
+.main-footer__copyright svg {
+  width: 27px;
+  height: 34px;
+  fill: $grey-icon;
+}

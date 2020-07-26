@@ -1,0 +1,16 @@
+.features__list {
+  @include list;
+}
+
+.features__title {
+  @include oswald-text;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: normal;
+  color: $black;
+}
+
+.features__item {
+  padding-left: 80px;
+  margin-bottom: 20px;
+}
