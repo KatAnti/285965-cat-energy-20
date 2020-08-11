@@ -1,23 +1,40 @@
 .selection__title {
   @include oswald-text;
-  padding-left: 20px;
-  padding-right: 20px;
   font-weight: normal;
   font-size: 36px;
   line-height: 36px;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .selection__text {
+  max-width: 226px;
+
   @include oswald-text;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-bottom: 30px;
   text-transform: uppercase;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 45px;
+    max-width: 323px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+    margin-bottom: 60px;
+  }
 }
 
-.selection__wrapper {
-  width: 320px;
+.selection__form {
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 72px;
+  }
 }

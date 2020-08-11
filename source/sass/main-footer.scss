@@ -2,13 +2,32 @@
   padding-top: 39px;
   padding-bottom: 22px;
   background-color: $basic-grey;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 55px;
+    padding-bottom: 60px;
+  }
+}
+
+.main-footer__wrapper {
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .main-footer__logo {
-  display: block;
+  display: inline-block;
   width: 128px;
   height: 24px;
   margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .main-footer__copyright {

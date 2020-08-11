@@ -1,5 +1,10 @@
 .programs__list {
   @include list;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .programs__item:not(:last-child) {
