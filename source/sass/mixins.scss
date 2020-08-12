@@ -3,24 +3,15 @@
   font-size: 14px;
   line-height: 18px;
   color: $text-light;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 @mixin oswald-text {
   font-family: "Oswald", "Helvetica", sans-serif;
-}
-
-@mixin list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-@mixin line-title {
-  @include oswald-text;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 24px;
-  color: $black;
 }
 
 @mixin pseudo($top, $left, $width, $height) {
@@ -31,4 +22,44 @@
   left: $left;
   width: $width;
   height: $height;
+}
+
+@mixin list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+@mixin line-title {
+  display: inline-block;
+  position: relative;
+  background-color: $white;
+  padding-right: 20px;
+
+  @include oswald-text;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+  color: $black;
+
+  &::after {
+    @include pseudo(50%, auto, 100vw, 2px);
+    background-color: $basic-green;
+    z-index: -1;
+  }
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    padding-left: 40px;
+    margin-left: -40px;
+    font-size: 36px;
+    line-height: 36px;
+
+    &::before {
+      @include pseudo(50%, auto, 100vw, 2px);
+      right: 20px;
+      background-color: $basic-green;
+      z-index: -1;
+    }
+  }
 }

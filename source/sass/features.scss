@@ -1,5 +1,11 @@
 .features__list {
   @include list;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .features__title {
@@ -8,9 +14,55 @@
   line-height: 40px;
   font-weight: normal;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .features__item {
+  position: relative;
   padding-left: 80px;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 250px;
+    padding-top: 110px;
+    padding-bottom: 55px;
+    padding-left: 0;
+    margin-bottom: 90px;
+
+    &::after {
+      position: absolute;
+      top: 0;
+
+      @include oswald-text;
+      font-size: 280px;
+      line-height: 280px;
+      color: $basic-grey;
+
+      z-index: -1;
+    }
+
+    &--benefit::after {
+      content: "1";
+      right: 30px;
+    }
+
+    &--simplicity::after {
+      content: "2";
+      right: 10px;
+    }
+
+    &--replacement::after {
+      content: "3";
+      right: 20px;
+    }
+
+    &--fast::after {
+      content: "4";
+      right: 0;
+    }
+  }
 }

@@ -4,9 +4,30 @@
 
 .additional-products__title {
   @include line-title;
+  margin-top: 28px;
+  margin-bottom: 35px;
 }
 
 .additional-products__list {
   @include list;
   margin-bottom: 39px;
+
+  @media (min-width: $desktop-width) {
+    width: 896px;
+    margin-bottom: 0;
+  }
+}
+
+.additional-item__price {
+  @media (min-width: $desktop-width) {
+    min-width: 50px;
+    text-align: center;
+  }
+}
+
+.additional-products__row {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }

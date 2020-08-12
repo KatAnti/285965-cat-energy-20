@@ -1,6 +1,7 @@
 @import "fonts.scss";
 @import "variables.scss";
 @import "mixins.scss";
+@import "base.scss";
 @import "page.scss";
 @import "wrapper.scss";
 @import "button.scss";
@@ -22,28 +23,3 @@
 @import "show-more.scss";
 @import "selection.scss";
 @import "form.scss";
-
-img {
-  max-width: 100%;
-}
-
-a {
-  text-decoration: none;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}

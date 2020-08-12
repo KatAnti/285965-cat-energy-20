@@ -2,12 +2,13 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="main-header">
-      <div class="main-header__logo-wrapper wrapper">
+      <div class="main-header__logo-wrapper">
         <a class="main-header__logo" href="index.html">
           <img src="img/logo-mobile.svg" width="192" height="40" alt="Cat Energy">
         </a>
@@ -19,7 +20,7 @@
             <a class="main-menu__link" href="index.html">главная</a>
           </li>
           <li class="main-menu__item">
-            <a class="main-menu__link" href="">каталог продукции</a>
+            <a class="main-menu__link main-menu__link--active" href="">каталог продукции</a>
           </li>
           <li class="main-menu__item">
             <a class="main-menu__link" href="form.html">подбор программы</a>
@@ -235,58 +236,60 @@
       <section class="additional-products">
         <div class="additional-products__wrapper wrapper">
           <h2 class="additional-products__title">Дополнительные товары</h2>
-          <ul class="additional-products__list">
-            <li class="additional-products__item additional-item">
-              <h3 class="additional-item__title">Сахарозаменитель</h3>
-              <dl class="additional-item__values">
-                <dt class="additional-item__amount">1 упаковка (100 г)</dt>
-                <dd class="additional-item__price">200 Р</dd>
-              </dl>
-              <a class="additional-item__button button button--green" href="">заказать</a>
-            </li>
-            <li class="additional-products__item additional-item">
-              <h3 class="additional-item__title">питьевая вода</h3>
-              <dl class="additional-item__values">
-                <dt class="additional-item__amount">5 литров</dt>
-                <dd class="additional-item__price">50 Р</dd>
-              </dl>
-              <a class="additional-item__button button button--green" href="">заказать</a>
-            </li>
-            <li class="additional-products__item additional-item">
-              <h3 class="additional-item__title">молоко</h3>
-              <dl class="additional-item__values">
-                <dt class="additional-item__amount">1 литр</dt>
-                <dd class="additional-item__price">100 Р</dd>
-              </dl>
-              <a class="additional-item__button button button--green" href="">заказать</a>
-            </li>
-            <li class="additional-products__item additional-item">
-              <h3 class="additional-item__title">витамины</h3>
-              <dl class="additional-item__values">
-                <dt class="additional-item__amount">1 упаковка (30 г)</dt>
-                <dd class="additional-item__price">300 Р</dd>
-              </dl>
-              <a class="additional-item__button button button--green" href="">заказать</a>
-            </li>
-          </ul>
-          <article class="gift-banner">
-            <h2 class="visually-hidden">Чехол в подарок</h2>
-            <p class="gift-banner__text">
-              Закажите все
-              и получите чехол для
-              кота в подарок!
-            </p>
-          </article>
+          <div class="additional-products__row">
+            <ul class="additional-products__list">
+              <li class="additional-products__item additional-item">
+                <h3 class="additional-item__title">Сахарозаменитель</h3>
+                <dl class="additional-item__values">
+                  <dt class="additional-item__amount">1 упаковка (100 г)</dt>
+                  <dd class="additional-item__price">200 Р</dd>
+                </dl>
+                <a class="additional-item__button button button--green" href="">заказать</a>
+              </li>
+              <li class="additional-products__item additional-item">
+                <h3 class="additional-item__title">питьевая вода</h3>
+                <dl class="additional-item__values">
+                  <dt class="additional-item__amount">5 литров</dt>
+                  <dd class="additional-item__price">50 Р</dd>
+                </dl>
+                <a class="additional-item__button button button--green" href="">заказать</a>
+              </li>
+              <li class="additional-products__item additional-item">
+                <h3 class="additional-item__title">молоко</h3>
+                <dl class="additional-item__values">
+                  <dt class="additional-item__amount">1 литр</dt>
+                  <dd class="additional-item__price">100 Р</dd>
+                </dl>
+                <a class="additional-item__button button button--green" href="">заказать</a>
+              </li>
+              <li class="additional-products__item additional-item">
+                <h3 class="additional-item__title">витамины</h3>
+                <dl class="additional-item__values">
+                  <dt class="additional-item__amount">1 упаковка (30 г)</dt>
+                  <dd class="additional-item__price">300 Р</dd>
+                </dl>
+                <a class="additional-item__button button button--green" href="">заказать</a>
+              </li>
+            </ul>
+            <article class="gift-banner">
+              <h2 class="visually-hidden">Чехол в подарок</h2>
+              <p class="gift-banner__text">
+                Закажите все
+                и получите чехол для
+                кота в подарок!
+              </p>
+            </article>
+          </div>
         </div>
       </section>
       <section class="cooperation">
-        <div class="cooperation__text">
-          <div class="cooperation__wrapper cooperation__wrapper--grey wrapper">
+        <div class="cooperation__text cooperation__text--grey">
+          <div class="cooperation__wrapper wrapper">
             <h2 class="cooperation__title">приглашаем к сотрудничеству дилеров!</h2>
             <address class="cooperation__address">
               ул. Большая
               Конюшенная, д. 19/8
-              Санкт-Петербург
+              <p class="cooperation__city">Санкт-Петербург</p>
             </address>
           </div>
         </div>
