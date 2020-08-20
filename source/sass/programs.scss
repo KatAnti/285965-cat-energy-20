@@ -1,12 +1,21 @@
 .programs__list {
   @include list;
 
+  @media (min-width: $tablet-width) {
+    padding-bottom: 20px;
+  }
+
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 42px;
   }
 }
 
 .programs__item:not(:last-child) {
-  margin-bottom: 20px;
+  margin-bottom: 19px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
 }

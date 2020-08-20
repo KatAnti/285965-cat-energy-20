@@ -1,14 +1,22 @@
 .features__list {
   @include list;
+  margin-bottom: 41px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
     justify-content: space-between;
   }
 }
 
 .features__title {
+  margin-top: 25px;
+  margin-bottom: 39px;
+
   @include oswald-text;
   font-size: 36px;
   line-height: 40px;
@@ -16,22 +24,68 @@
   color: $black;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 72px;
     font-size: 60px;
     line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+    margin-bottom: 70px;
   }
 }
 
 .features__item {
   position: relative;
+  min-height: 60px;
   padding-left: 80px;
   margin-bottom: 20px;
 
+  &::before {
+    @include pseudo(0, 0, 60px, 60px);
+    background-color: $basic-green;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    z-index: 2;
+  }
+
+  &--benefit::before {
+    background-image: url("../img/advantage-leaf@1x.png");
+  }
+
+  &--simplicity::before {
+    background-image: url("../img/advantage-powder@1x.png");
+  }
+
+  &--replacement::before {
+    background-image: url("../img/advantage-dining@1x.png");
+  }
+
+  &--fast::before {
+    background-image: url("../img/advantage-clock@1x.png");
+  }
+
   @media (min-width: $tablet-width) {
-    width: 250px;
-    padding-top: 110px;
+    width: 245px;
+    padding-top: 112px;
     padding-bottom: 55px;
     padding-left: 0;
-    margin-bottom: 90px;
+    margin-bottom: 78px;
+
+    &:nth-child(3),
+    &:nth-child(4) {
+      margin-bottom: 47px;
+    }
+
+    &:not(:nth-child(2n)) {
+      margin-right: 140px;
+    }
+
+    &::before {
+      width: 80px;
+      height: 80px;
+    }
 
     &::after {
       position: absolute;
@@ -39,7 +93,7 @@
 
       @include oswald-text;
       font-size: 280px;
-      line-height: 280px;
+      line-height: 198px;
       color: $basic-grey;
 
       z-index: -1;
@@ -47,22 +101,35 @@
 
     &--benefit::after {
       content: "1";
-      right: 30px;
+      right: 17px;
     }
 
     &--simplicity::after {
       content: "2";
-      right: 10px;
+      right: 5px;
     }
 
     &--replacement::after {
       content: "3";
-      right: 20px;
+      right: 0;
     }
 
     &--fast::after {
       content: "4";
       right: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 17px;
+
+    &:nth-child(3),
+    &:nth-child(4) {
+      margin-bottom: 17px;
+    }
+
+    &:not(:nth-child(2n)) {
+      margin-right: 0;
     }
   }
 }
