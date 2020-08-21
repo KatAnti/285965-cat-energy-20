@@ -1,8 +1,0 @@
-.main--overflow {
-  overflow: hidden;
-  border-top: 1px solid $basic-grey-hover;
-
-  @media (min-width: $tablet-width) {
-    border-top: none;
-  }
-}

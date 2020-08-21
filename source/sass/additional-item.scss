@@ -1,6 +1,6 @@
 .additional-item {
   padding-top: 13px;
-  padding-bottom: 16px;
+  padding-bottom: 18px;
   border-top: 1px solid $border-grey-dark;
 
   &:last-child {
@@ -11,10 +11,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-top: 26px;
     padding-left: 38px;
     padding-right: 38px;
-    padding-bottom: 26px;
     border-left: 1px solid $border-grey-dark;
     border-right: 1px solid $border-grey-dark;
   }
@@ -22,8 +20,8 @@
   @media (min-width: $desktop-width) {
     flex-wrap: nowrap;
     align-items: center;
-    padding-top: 16px;
-    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-bottom: 17px;
     padding-left: 0;
     padding-right: 0;
     border-left: none;
@@ -32,9 +30,6 @@
 }
 
 .additional-item__title {
-  margin-top: 0;
-  margin-bottom: 0;
-
   @include oswald-text;
   font-weight: normal;
   font-size: 16px;
@@ -55,34 +50,13 @@
 .additional-item__values {
   display: flex;
   justify-content: space-between;
-  margin-top: 11px;
-  margin-bottom: 14px;
-
-  @media (min-width: $tablet-width) {
-    margin-top: 0;
-    margin-bottom: 22px;
-  }
 
   @media (min-width: $desktop-width) {
     min-width: 286px;
+    margin-top: 0;
     margin-bottom: 0;
-    margin-top: 5px;
     margin-left: auto;
     margin-right: 40px;
-  }
-}
-
-
-.additional-item__price {
-  @media (min-width: $desktop-width) {
-    min-width: 45px;
-    text-align: center;
-  }
-}
-
-.additional-item__amount {
-  @media (min-width: $tablet-width) {
-    margin-right: 8px;
   }
 }
 
