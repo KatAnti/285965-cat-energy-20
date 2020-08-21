@@ -7,13 +7,12 @@
 .cooperation__wrapper {
   display: flex;
   justify-content: space-between;
-  padding-top: 27px;
+  padding-top: 28px;
   padding-bottom: 28px;
 
   @media (min-width: $tablet-width) {
-    max-width: 685px;
     padding-top: 66px;
-    padding-bottom: 60px;
+    padding-bottom: 50px;
   }
 
   @media (min-width: $desktop-width) {
@@ -28,9 +27,9 @@
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    top: 95px;
-    left: 7.6%;
-    min-width: 575px;
+    top: 105px;
+    left: 18%;
+    min-width: 570px;
     padding-left: 76px;
     padding-right: 89px;
     padding-top: 66px;
@@ -41,17 +40,8 @@
 }
 
 .cooperation__map {
+  width: 320px;
   margin: 0 auto;
-}
-
-.cooperation__map picture {
-  display: block;
-  height: 362px;
-  text-align: center;
-
-  @media (min-width: $tablet-width) {
-    height: 400px;
-  }
 }
 
 .cooperation__title {
@@ -60,7 +50,7 @@
 
   @include oswald-text;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 18px;
   font-weight: normal;
   text-transform: uppercase;
   color: $text-dark;
@@ -68,11 +58,7 @@
   @media (min-width: $tablet-width) {
     max-width: 170px;
     font-size: 20px;
-    line-height: 24px;
-  }
-
-  @media (min-width: $desktop-width) {
-    line-height: 24px;
+    line-height: 21px;
   }
 }
 
@@ -84,11 +70,6 @@
   @media (min-width: $tablet-width) {
     max-width: 160px;
     font-size: 16px;
-    text-align: right;
-  }
-
-  @media (min-width: $desktop-width) {
-    text-align: left;
   }
 }
 
