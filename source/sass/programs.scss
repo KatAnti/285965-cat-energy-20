@@ -19,3 +19,9 @@
     margin-bottom: 30px;
   }
 }
+
+.programs__item {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 30px;
+  }
+}
