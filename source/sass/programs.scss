@@ -10,3 +10,9 @@
 .programs__item:not(:last-child) {
   margin-bottom: 20px;
 }
+
+.programs__item {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 30px;
+  }
+}
