@@ -1,5 +1,8 @@
 .intro-banner {
   @include oswald-text;
+
+  padding-top: 27px;
+  margin-bottom: 22px;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-position: center top;
   background-repeat: no-repeat;
@@ -14,7 +17,7 @@
 
   @media (min-width: $desktop-width) {
     &::after {
-      @include pseudo(0, inherit, 50%, 694px);
+      @include pseudo(0, inherit, 50%, 696px);
       right: 0;
       background-color: #64a83b;
       background-image: url("../img/index-background-desktop@1x.jpg");
@@ -26,29 +29,21 @@
 }
 
 .intro-banner__wrapper {
-  padding-top: 28px;
-  margin-bottom: 21px;
-
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
-    padding-left: 118px;
-    padding-top: 38px;
-    margin-bottom: 0;
+    padding-left: 110px;
   }
 
   @media (min-width: $desktop-width) {
     flex-wrap: wrap;
-    height: 530px;
-    padding-top: 58px;
-    padding-left: 109px;
-    margin-bottom: 81px;
+    height: 522px;
+    padding-top: 30px;
   }
 }
 
 .intro-banner__title {
   margin-top: 0;
-  margin-bottom: 25px;
   font-weight: normal;
   font-size: 36px;
   line-height: 36px;
@@ -62,58 +57,54 @@
 }
 
 .intro-banner__text {
-  margin-bottom: 28px;
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     font-size: 20px;
     line-height: 20px;
     order: 2;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 54px;
   }
 }
 
 .intro-banner__link {
   display: block;
-  padding-bottom: 12px;
   font-size: 14px;
   line-height: 18px;
 
   @media (min-width: $tablet-width) {
     align-self: flex-start;
-    margin-left: -7px;
-    padding-top: 16px;
-    padding-bottom: 17px;
+    padding-top: 14px;
+    padding-bottom: 14px;
     padding-right: 26px;
-    padding-left: 27px;
+    padding-left: 26px;
     font-size: 20px;
     line-height: 20px;
     order: 3;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-left: 0;
   }
 }
 
 .intro-banner__img {
   @media (min-width: $tablet-width) {
-    width: 709px;
-    height: 609px;
     margin-top: -80px;
-    margin-left: -88px;
     z-index: -1;
     order: 4;
+
+    /* временные до графики */
+
+    width: 708px;
+    height: 609px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: -109px;
+    margin-left: -200px;
     z-index: 1;
+
+    /* временные до графики */
+
+    width: 552px;
+    height: 499px;
   }
 }
