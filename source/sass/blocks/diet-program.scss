@@ -1,0 +1,190 @@
+.diet-program {
+  position: relative;
+  padding: 20px;
+  padding-top: 30px;
+  background-color: $basic-grey;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 77px;
+    padding-left: 52px;
+    padding-bottom: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    padding-right: 52px;
+    padding-bottom: 57px;
+  }
+
+  &::after {
+    @include pseudo(inherit, inherit, auto, auto);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
+
+  &::before {
+    @include pseudo(24px, 22px, 50px, 50px);
+    background-color: $basic-green;
+    border-radius: 50%;
+
+    @media (min-width: $tablet-width) {
+      width: 200px;
+      height: 200px;
+      top: 91px;
+      right: 61px;
+      left: auto;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 100px;
+      height: 100px;
+      top: 47px;
+      left: 52px;
+      right: auto;
+    }
+  }
+}
+
+.diet-program--loss::after {
+  top: 21px;
+  left: 29px;
+  width: 36px;
+  height: 50px;
+  background-image: url("../img/icon-cat-slim.svg");
+
+  @media (min-width: $tablet-width) {
+    top: 81px;
+    right: 92px;
+    left: auto;
+    width: 140px;
+    height: 192px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 41px;
+    left: 67px;
+    right: auto;
+    width: 70px;
+    height: 97px;
+  }
+}
+
+.diet-program--gain::after {
+  top: 35px;
+  left: 13px;
+  width: 67px;
+  height: 28px;
+  background-image: url("../img/icon-cat-pro.svg");
+
+  @media (min-width: $tablet-width) {
+    top: 135px;
+    right: 28px;
+    left: auto;
+    width: 268px;
+    height: 112px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 67px;
+    left: 33px;
+    right: auto;
+    width: 134px;
+    height: 56px;
+  }
+}
+
+.diet-program__title {
+  margin: 0;
+  margin-bottom: 29px;
+  padding-left: 70px;
+
+  @include oswald-text;
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: $black;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 25px;
+    padding-left: 0;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 162px;
+    margin-bottom: 73px;
+  }
+}
+
+.diet-program__link {
+  position: relative;
+  display: inline-block;
+  padding-right: 38px;
+
+  @include oswald-text;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $black;
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &::after {
+    @include pseudo(calc(50% - 6px), auto, 24px, 12px);
+    right: 0;
+    background-image: url("../../img/icon-right-arrow-long.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
+
+  &:hover::after {
+    width: 32px;
+    height: 10px;
+    top: calc(50% - 5px);
+    right: -8px;
+    background-image: url("../../img/icon-right-arrow-verylong.svg");
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-right: 49px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.diet-program__desc {
+  margin-bottom: 19px;
+  padding-bottom: 23px;
+  border-bottom: 1px solid $border-dark;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 28px;
+    border-bottom: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: inherit;
+    padding-bottom: 0;
+  }
+}
+
+
+.diet-program--loss .diet-program__desc {
+  max-width: 377px;
+
+  @media (min-width: $desktop-width) {
+    max-width: inherit;
+  }
+}
+
+.diet-program--gain .diet-program__desc {
+  max-width: 342px;
+
+  @media (min-width: $desktop-width) {
+    max-width: inherit;
+  }
+}
