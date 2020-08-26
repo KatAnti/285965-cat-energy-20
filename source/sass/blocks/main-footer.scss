@@ -1,11 +1,15 @@
 .main-footer {
   padding-top: 39px;
-  padding-bottom: 22px;
+  padding-bottom: 24px;
   background-color: $basic-grey;
 
   @media (min-width: $tablet-width) {
     padding-top: 55px;
     padding-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 58px;
   }
 }
 
@@ -23,10 +27,28 @@
   display: inline-block;
   width: 128px;
   height: 24px;
-  margin-bottom: 32px;
+  margin-bottom: 31px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
+  }
+}
+
+.main-footer__social-media {
+  @include list;
+  margin-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-top: 1px;
   }
 }
 
@@ -35,18 +57,24 @@
   justify-content: space-between;
   align-items: center;
   color: $text-light;
+  font-size: 16px;
 
   &:hover svg {
     fill: $basic-green;
   }
 
-  &:active svg {
+  &:active {
     opacity: 0.3;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 163px;
   }
 }
 
 .main-footer__copyright svg {
   width: 27px;
   height: 34px;
+  margin-left: 23px;
   fill: $grey-icon;
 }
