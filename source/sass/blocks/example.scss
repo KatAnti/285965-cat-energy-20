@@ -2,7 +2,7 @@
   background-color: $basic-grey-dark;
 
   @media (min-width: $tablet-width) {
-    background-image: linear-gradient(180deg, $white 0%, $white 57%, $basic-grey-dark 57%, $basic-grey-dark 100%);
+    background-image: linear-gradient(180deg, $white 0%, $white 57.3%, $basic-grey-dark 57.3%, $basic-grey-dark 100%);
     border-top: 1px solid $border-grey;
   }
 
@@ -37,10 +37,12 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 52px;
+    padding-right: 10px;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 68px;
+    padding-right: 0;
   }
 }
 
