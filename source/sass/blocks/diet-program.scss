@@ -136,7 +136,7 @@
   &::after {
     @include pseudo(calc(50% - 6px), auto, 24px, 12px);
     right: 0;
-    background-image: url("../../img/icon-right-arrow-long.svg");
+    background-image: url("../img/icon-right-arrow-long.svg");
     background-position: 0 0;
     background-repeat: no-repeat;
   }
@@ -146,7 +146,7 @@
     height: 10px;
     top: calc(50% - 5px);
     right: -8px;
-    background-image: url("../../img/icon-right-arrow-verylong.svg");
+    background-image: url("../img/icon-right-arrow-verylong.svg");
   }
 
   @media (min-width: $tablet-width) {

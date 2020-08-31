@@ -1,8 +1,9 @@
 .social-media {
   display: flex;
   justify-content: center;
-  padding-top: 24px;
-  padding-bottom: 16px;
+  align-items: center;
+  padding-top: 21px;
+  padding-bottom: 18px;
   border-top: 1px solid $border-dark;
   border-bottom: 1px solid $border-dark;
 
@@ -10,12 +11,24 @@
     align-items: flex-end;
     border: none;
     padding: 0;
+    margin-left: 17px;
+  }
+
+  @media (min-width: $desktop-width) {
     margin-left: 20px;
   }
 }
 
+.social-media__item:first-child {
+  margin-left: -10px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+  }
+}
+
 .social-media__item:not(:last-child) {
-  margin-right: 35px;
+  margin-right: 38px;
 
   @media (min-width: $tablet-width) {
     margin-right: 28px;
@@ -61,11 +74,15 @@
 
   &--facebook {
     margin-top: -4px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 0;
+    }
   }
 
   &--facebook svg {
-    width: 22px;
-    height: 22px;
+    width: 10px;
+    height: 19px;
 
     @media (min-width: $tablet-width) {
       width: 13px;

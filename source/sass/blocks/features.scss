@@ -24,6 +24,7 @@
   color: $black;
 
   @media (min-width: $tablet-width) {
+    margin-top: 27px;
     margin-bottom: 72px;
     font-size: 60px;
     line-height: 60px;
@@ -126,7 +127,7 @@
 
     &--simplicity::after {
       content: "2";
-      right: 5px;
+      right: 0;
     }
 
     &--replacement::after {
