@@ -101,7 +101,7 @@
   padding-bottom: 37px;
 
   @media (min-width: $tablet-width) {
-    width: 708px;
+    width: 690px;
     padding-bottom: 68px;
   }
 
@@ -126,10 +126,12 @@
     width: 690px;
     height: 517px;
     margin-bottom: 15px;
+    margin-left: -10px;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 35px;
+    margin-left: 0;
     z-index: 2;
   }
 }
@@ -209,10 +211,10 @@
 
 .example__toggle-button {
   position: relative;
-  width: 84px;
+  width: 87px;
   height: 14px;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin-left: 16px;
+  margin-right: 16px;
   background-color: $white;
   border: 1px solid $border-grey-dark;
   border-radius: 6px;
