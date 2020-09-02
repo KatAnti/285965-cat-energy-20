@@ -88,12 +88,20 @@
     @media (min-width: $tablet-width) {
       margin-bottom: 29px;
     }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 32px;
+    }
   }
 
   &--additional {
     @media (min-width: $tablet-width) {
       margin-bottom: 0;
       padding-bottom: 19px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-bottom: 12px;
     }
   }
 }

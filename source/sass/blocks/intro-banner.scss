@@ -66,7 +66,7 @@
   line-height: 36px;
 
   @media (min-width: $tablet-width) {
-    max-width: 500px;
+    max-width: 450px;
     margin: 0;
     margin-bottom: 20px;
     font-size: 60px;
@@ -127,7 +127,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: -138px;
+    margin-left: -176px;
     z-index: 1;
   }
 }
