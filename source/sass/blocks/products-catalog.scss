@@ -42,11 +42,11 @@
   @media (min-width: $tablet-width) {
     display: flex;
     border-bottom: none;
-    margin-bottom: 76px;
+    margin-bottom: 75px;
 
     &:last-child,
     &:nth-last-child(2) {
-      margin-bottom: 39px;
+      margin-bottom: 41px;
     }
   }
 

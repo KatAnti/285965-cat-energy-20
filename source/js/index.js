@@ -1,3 +1,27 @@
+// Мобильное меню
+
+var mainMenu = document.querySelector('.main-menu');
+var toggleBtn = document.querySelector('.main-header__menu-toggle');
+
+mainMenu.classList.remove('main-menu--nojs');
+toggleBtn.classList.remove('main-header__menu-toggle--nojs');
+
+mainMenu.classList.remove('main-menu--opened');
+toggleBtn.classList.remove('main-header__menu-toggle--opened');
+toggleBtn.classList.add('main-header__menu-toggle--closed');
+
+toggleBtn.addEventListener('click', function(evt) {
+  if (mainMenu.classList.contains('main-menu--opened')) {
+    mainMenu.classList.remove('main-menu--opened');
+    toggleBtn.classList.remove('main-header__menu-toggle--opened');
+    toggleBtn.classList.add('main-header__menu-toggle--closed');
+  } else {
+    mainMenu.classList.add('main-menu--opened');
+    toggleBtn.classList.add('main-header__menu-toggle--opened');
+    toggleBtn.classList.remove('main-header__menu-toggle--closed');
+  }
+});
+
 // Карта Яндекс
 
 ymaps.ready(function () {
@@ -16,6 +40,9 @@ ymaps.ready(function () {
     iconImageOffset: [-30, -42]
   });
 
+  myMap.geoObjects
+    .add(myPlacemark);
+
   if (document.documentElement.clientWidth > 767) {
     myPlacemark.options.set('iconImageSize', [124, 106]);
     myPlacemark.options.set('iconImageOffset', [-62, -56]);
@@ -27,28 +54,16 @@ ymaps.ready(function () {
     myPlacemark.options.set('iconImageOffset', [-50, -76]);
     myMap.setZoom(16);
   }
-
-  myMap.geoObjects
-    .add(myPlacemark);
 });
 
-// Мобильное меню
+var map = document.querySelector('#map');
 
-var mainMenu = document.querySelector('.main-menu');
-var toggleBtn = document.querySelector('.main-header__menu-toggle');
+var resizeMap = function () {
+  map.style.width = document.documentElement.clientWidth + 'px';
+};
 
-mainMenu.classList.remove('main-menu--opened');
-toggleBtn.classList.remove('main-header__menu-toggle--opened');
-toggleBtn.classList.add('main-header__menu-toggle--closed');
+resizeMap();
 
-toggleBtn.addEventListener('click', function(evt) {
-  if (mainMenu.classList.contains('main-menu--opened')) {
-    mainMenu.classList.remove('main-menu--opened');
-    toggleBtn.classList.remove('main-header__menu-toggle--opened');
-    toggleBtn.classList.add('main-header__menu-toggle--closed');
-  } else {
-    mainMenu.classList.add('main-menu--opened');
-    toggleBtn.classList.add('main-header__menu-toggle--opened');
-    toggleBtn.classList.remove('main-header__menu-toggle--closed');
-  }
+window.addEventListener("resize", function(evt) {
+  resizeMap();
 });

@@ -6,10 +6,10 @@
   flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
+    flex-direction: column;
     width: 324px;
     padding-left: 0;
     padding-right: 0;
-    flex-direction: column;
     padding-bottom: 40px;
     background-image: linear-gradient(180deg, $white 0%, $white 64px, $basic-grey 64px, $basic-grey 100%);
   }
@@ -61,6 +61,8 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 23px;
+    margin-top: 19px;
+    margin-bottom: 14px;
   }
 
   @media (min-width: $desktop-width) {
