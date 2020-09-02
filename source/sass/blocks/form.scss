@@ -434,7 +434,7 @@
     outline: 2px solid $text-light;
   }
 
-  &:invalid:not(:placeholder-shown) {
+  &:focus:invalid {
     outline: 2px solid $error;
   }
 }
@@ -446,6 +446,10 @@
   &:focus {
     outline: 2px solid $text-light;
   }
+
+  &:focus:invalid {
+    outline: 2px solid $error;
+  }
 }
 
 .form__input:focus + .form__email-icon,
@@ -453,8 +457,8 @@
   fill: $basic-green;
 }
 
-.form__input:invalid:not(:placeholder-shown) + .form__email-icon,
-.form__input:invalid:not(:placeholder-shown) + .form__phone-icon {
+.form__input:focus:invalid + .form__email-icon,
+.form__input:focus:invalid + .form__phone-icon {
   fill: $error;
 }
 
