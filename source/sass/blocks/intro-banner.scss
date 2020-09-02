@@ -58,13 +58,16 @@
 }
 
 .intro-banner__title {
-  margin-top: 0;
+  max-width: 250px;
+  margin: 0 auto;
   margin-bottom: 25px;
   font-weight: normal;
   font-size: 36px;
   line-height: 36px;
 
   @media (min-width: $tablet-width) {
+    max-width: 500px;
+    margin: 0;
     margin-bottom: 20px;
     font-size: 60px;
     line-height: 60px;

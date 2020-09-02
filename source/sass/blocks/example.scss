@@ -157,19 +157,21 @@
     display: block;
     width: calc(100% - 49% - 17px);
     right: 0;
-
-    & img {
-      position: relative;
-      right: 101%;
-    }
   }
 
   @media (min-width: $desktop-width) {
     width: calc(100% - 53% - 17px);
+  }
+}
 
-    & img {
-      right: 119%;
-    }
+.example__image-inner--after {
+  @media (min-width: $tablet-width) {
+    position: relative;
+    right: 101%;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 119%;
   }
 }
 
