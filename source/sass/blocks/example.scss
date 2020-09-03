@@ -143,10 +143,6 @@
     position: absolute;
     top: 0;
     overflow: hidden;
-
-    & img {
-      max-width: fit-content;
-    }
   }
 }
 
@@ -162,6 +158,10 @@
   @media (min-width: $desktop-width) {
     width: calc(100% - 53% - 17px);
   }
+}
+
+.example__image-inner {
+  max-width: fit-content;
 }
 
 .example__image-inner--after {
@@ -199,6 +199,8 @@
 }
 
 .example__toggle-wrapper {
+  display: flex;
+
   @media (min-width: $tablet-width) {
     position: relative;
     width: 428px;

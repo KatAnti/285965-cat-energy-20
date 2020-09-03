@@ -64,6 +64,6 @@ var resizeMap = function () {
 
 resizeMap();
 
-window.addEventListener("resize", function(evt) {
+window.addEventListener('resize', function(evt) {
   resizeMap();
 });

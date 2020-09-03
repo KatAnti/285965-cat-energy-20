@@ -102,9 +102,11 @@
     &::after {
       bottom: -7px;
     }
+  }
+}
 
-    &.main-menu__link--index::after {
-      background-color: $white;
-    }
+.main-menu__link--active.main-menu__link--index::after {
+  @media (min-width: $desktop-width) {
+    background-color: $white;
   }
 }

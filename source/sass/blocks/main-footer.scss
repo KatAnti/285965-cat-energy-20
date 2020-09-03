@@ -59,10 +59,6 @@
   color: $text-light;
   font-size: 16px;
 
-  &:hover svg {
-    fill: $basic-green;
-  }
-
   &:active {
     opacity: 0.3;
   }
@@ -70,6 +66,10 @@
   @media (min-width: $desktop-width) {
     min-width: 163px;
   }
+}
+
+.main-footer__copyright:hover svg {
+  fill: $basic-green;
 }
 
 .main-footer__copyright svg {
